@@ -284,9 +284,10 @@ body {
 
 @media (max-width: 768px) {
   .home {
+    height: 500px;
     padding-left: 10%;
     padding-top: 15%;
-    margin-top: 40px;
+    margin-top: 70px;
     align-items: center;
   }
 
