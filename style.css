@@ -322,6 +322,7 @@ body {
   .home {
     padding-left: 5%;
     padding-top: 20%;
+    align-items: center;
   }
 
   .content {
@@ -334,10 +335,12 @@ body {
 
   .start {
     font-size: 20px;
+    align-items: center;
   }
 
   .wrapper {
     font-size: 20px; /* Adjusted font size for smaller screens */
+    align-items: center;
   }
 
   .Asection, .myed, .myint {
