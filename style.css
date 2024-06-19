@@ -1,379 +1,295 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
 .navbar {
-  background-color: white;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  top: 0; /* Ensure the navbar stays at the top */
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .navbar a:hover {
-  background-color: rgb(178, 171, 206);
-  color: black;
+    background-color: rgb(178, 171, 206);
+    color: black;
+}
+
+.navbar .icon {
+    display: none;
 }
 
 .content {
-  padding-top: 60px; /* Adjust as needed based on the height of your navbar */
+    padding-top: 60px;
 }
 
 .box {
-  font-weight: 700;
-  font-size: 70px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .home {
-  background-color: white;
-  height: 400px;
-  display: flex;
-  text-align: left;
-  padding-left: 20%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  flex-direction: column;
-  font-size: 24px;
-  font-weight: 500;
-  margin-top: 60px;
+    background-color: white;
+    height: 400px;
+    display: flex;
+    text-align: left;
+    padding-left: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .start {
-  display: flex;
-  flex-direction: row;
-  font-size: 27px;
-  font-weight: 30px;
-  margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 27px;
+    font-weight: 30px;
+    margin-top: 20px;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
-/* About section */
 .Asection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f0f0f0;
-  padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f0f0f0;
 }
 
 .about {
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
 }
 
 .aboutContent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* Added for better responsiveness */
-  padding: 20px;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .photo {
-  width: 100%; /* Default to 100% width */
-  max-width: 500px; /* Limit max width for larger screens */
-  height: 300px; /* Fixed height for photo */
-  background-image: url("MyPhoto.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 10%;
-  margin: 20px auto; /* Center photo horizontally */
+    width: 50%;
+    height: 70%;
+    background-image: url("MyPhoto.jpg");
+    background-size: cover;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-position: center;
+    border-radius: 10%;
 }
 
 .phototext {
-  font-family: 'Poppins', sans-serif;
-  width: 100%;
-  max-width: 600px; /* Limit max width for larger screens */
-  padding: 20px;
-  margin: auto; /* Center text horizontally */
-  line-height: 1.6;
-  font-weight: 400;
-  word-spacing: 5px;
-  text-align: center; /* Center align text */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    width: 50%;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 1.6;
+    word-spacing: 5px;
 }
 
 .text2 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .text3 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-/* Education section */
 .myed {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  background-color: rgb(132, 113, 207);
-  color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(132, 113, 207);
+    color: black;
 }
 
 .myed2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.myed2 {
+    margin: 20px 0;
 }
 
 .education {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* Added for better responsiveness */
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .edbox {
-  background-color: #f0f0f0;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
-  font-size: 20px;
-  font-weight: 400;
-  flex: 1 1 calc(33% - 20px); /* Ensure 3 items per row with margins */
-  box-sizing: border-box;
-}
-
-.edbox:hover {
-  background-color: #dad1d1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
 }
 
 .s1 {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
-/* Interest section */
+.edbox:hover {
+    background-color: #dad1d1;
+}
+
 .myint {
-  margin: 60px 0 50px;
-  background-color: rgb(132, 113, 207);
-  color: black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    background-color: rgb(132, 113, 207);
+    color: black;
 }
 
 .my {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.my {
+    margin: 20px 0;
 }
 
 .myInterest {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* Added for better responsiveness */
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .mybox {
-  background-color: #f0f0f0;
-  padding: 30px;
-  margin: 10px;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
-  font-size: 20px;
-  flex: 1 1 calc(33% - 20px); /* Ensure 3 items per row with margins */
-  box-sizing: border-box;
+    background-color: #f0f0f0;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
 }
 
 .mybox:hover {
-  background-color: #dad1d1;
+    background-color: #dad1d1;
 }
 
-/* Skills section */
 .section {
-  font-family: 'Poppins', sans-serif;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%; /* Increased width for better readability */
-  padding: 20px;
-  line-height: 1.6;
-  font-weight: 400;
-  word-spacing: 5px;
-  text-align: center;
-  font-size: 20px;
-  height: auto;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    width: 50%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    word-spacing: 5px;
+    text-align: center;
+    font-size: 20px;
 }
 
-.skills2 p {
-  font-size: 1.3rem;
+.s3 {
+    padding-right: 10px;
 }
 
-.skills2 hr {
-  margin: 10px 0;
+.s4 {
+    text-decoration: underline;
 }
 
-.skills2 {
-  font-size: 16px;
-}
-
-/* Contact section */
 .contact {
-  padding: 50px 30px 50px 30px;
-  background-color: #f0f0f0;
-  justify-content: center;
-  color: black;
-  font-size: 20px; /* Adjusted font size for consistency */
+    padding-top: 30px;
+    background-color: #f0f0f0;
+    justify-content: center;
+}
+
+.contact {
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    color: black;
+    padding-left: 30px;
+    padding-top: 50px;
+    font-size: 30px;
 }
 
 .contact2 {
-  background-color: #f0f0f0;
-  height: auto;
-  justify-content: center;
-  font-size: 18px; /* Adjusted font size for consistency */
-  line-height: 1.6;
-  padding: 20px;
+    background-color: #f0f0f0;
+    height: 300px;
+    justify-content: center;
+    font-size: 20px;
 }
 
-.contact2 h3 {
-  font-size: 22px; /* Adjusted heading size */
-  margin-bottom: 20px; /* Added margin for spacing */
-}
-
-.contact2 .s2 {
-  margin: 10px 0; /* Added margin for spacing */
-}
-
-/* Footer */
 .footer {
-  background-color: rgb(178, 171, 206);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
+    background-color: rgb(178, 171, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
 
 .s5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  font-size: 20px;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-  .section {
-    width: 70%;
-  }
-  .skills2 p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .home {
-    height: 500px;
-    padding-left: 10%;
-    padding-top: 15%;
-    margin-top: 70px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
-
-  .content {
-    padding-top: 100px; /* Increased padding for smaller screens */
-  }
-
-  .Asection, .myed, .myint {
-    padding: 20px 10px; /* Adjusted padding for smaller screens */
-  }
-
-  .section {
-    width: 80%;
-  }
-
-  .skills2 p {
-    font-size: 1.1rem;
-  }
-
-  .education, .myInterest {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .photo, .phototext, .edbox, .mybox {
-    width: 90%;
-    margin: 20px 0; /* Adjusted margin for better spacing */
-  }
-}
-
-@media (max-width: 480px) {
-  .home {
-    padding-left: 5%;
-    padding-top: 20%;
-    align-items: center;
-  }
-
-  .content {
-    padding-top: 120px; /* Increased padding for smaller screens */
-  }
-
-  .box {
-    font-size: 50px; /* Adjusted font size for smaller screens */
-  }
-
-  .start {
+    flex-direction: row;
     font-size: 20px;
-    align-items: center;
-  }
+}
 
-  .wrapper {
-    font-size: 20px; /* Adjusted font size for smaller screens */
-    align-items: center;
-  }
+/* Responsive layout - makes the navbar links stack on top of each other instead of side by side on small screens */
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
 
-  .Asection, .myed, .myint {
-    padding: 20px 5px; /* Adjusted padding for smaller screens */
-  }
-
-  .section {
-    width: 90%;
-  }
-
-  .skills2 p {
-    font-size: 1rem;
-  }
-
-  .skills2 {
-    font-size: 14px; /* Smaller font size for mobile */
-  }
-
-  .education, .myInterest {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .photo, .phototext, .edbox, .mybox {
-    width: 95%;
-    margin: 20px 0; /* Adjusted margin for better spacing */
-  }
-
-  .contact, .contact2 {
-    font-size: 14px; /* Adjusted font size for smaller screens */
-  }
-
-  .contact2 h3 {
-    font-size: 18px; /* Adjusted heading size for smaller screens */
-  }
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
