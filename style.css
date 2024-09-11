@@ -44,9 +44,11 @@ body {
 
 .Asection {
     display: flex;
+    padding-top: 40px;
     flex-direction: column;
     justify-content: center;
     background-color: #f0f0f0;
+    padding-bottom: 40px;
 }
 
 .about {
@@ -59,6 +61,7 @@ body {
     height: 70vh;
     display: flex;
     flex-direction: row;
+    font-size: 20px;
 }
 
 .photo {
@@ -93,8 +96,8 @@ body {
 }
 
 .myed {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     background-color: rgb(132, 113, 207);
     color: black;
 }
@@ -122,6 +125,7 @@ body {
     background-color: #f0f0f0;
     padding: 20px;
     margin: 10px;
+    width: 80%;
     border-radius: 20px;
     margin-left: 30px;
     margin-right: 30px;
@@ -140,8 +144,7 @@ body {
 }
 
 .myint {
-    margin-top: 60px;
-    margin-bottom: 50px;
+  
     background-color: rgb(132, 113, 207);
     color: black;
 }
@@ -170,6 +173,7 @@ body {
     padding: 30px;
     margin: 10px;
     border-radius: 20px;
+    width: 80%;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 20px;
@@ -224,6 +228,7 @@ body {
     height: 300px;
     justify-content: center;
     font-size: 20px;
+    line-height: 2;
 }
 
 .footer {
@@ -303,19 +308,67 @@ body {
     .home, .aboutContent, .education, .myInterest {
         flex-direction: column; /* Stack items vertically */
         text-align: center; /* Center text */
+    
     }
 
     .aboutContent {
-        height: auto; /* Allow height to adjust */
+         height: 100vh;
+            flex-direction:column;
+            text-align: center
+       
     }
+    .photo {
+        width: 80%;
+        height: 60%;
+        background-image: url("MyPhoto.jpg");
+        background-size: cover;
+        margin-right: 50px;
+        margin-top: 30px;
+        margin-left: 50px;
+        background-position: center;
+        border-radius: 10%;
+    }
+    .phototext {
+        font-family: 'Poppins', sans-serif;
+        margin-top: 40px;
+        width: 80%;
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        line-height: 1.6;
+        word-spacing: 5px;
+    }
+    .edbox {
+        background-color: #f0f0f0;
+        width: 80%;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease;
+        font-size: 20px;
+    }
+    .mybox{
+        width: 80%;
+    }
+    .myskills{
+        width: 100%;
+    }
+    .contact2 {
+        background-color: #f0f0f0;
+        height: 300px;
+        justify-content: center;
+        font-size: 20px;
+        line-height: 2;
+    }
+    .s5 {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
 
-    .photo, .phototext {
-        width: 100%; /* Full width */
-        margin: 0; /* Remove margins */
-    }
-
-    .education, .myInterest {
-        flex-direction: column;
-        align-items: center;
-    }
 }
