@@ -2,35 +2,32 @@ const words = ['_Student', '_Developer', '_Learner'];
 const textElement = document.getElementById("typing-text");
 let index = 0;
 let charIndex = 0;
-let isFirstChar = true;
+let isDeleting = false; // Track if deleting
 
 function typeEffect() {
-    const word = words[index];
-    if (charIndex <= word.length) {
-        let typedText = '';
-        if (isFirstChar) {
-            typedText += '\t'; // Add a tab space before the word if it's the first character
-            isFirstChar = false;
-        }
-        typedText += word.substring(0, charIndex); // Display characters up to current index
-        textElement.textContent = typedText;
+    const currentWord = words[index];
+    const delay = isDeleting ? 50 : 100; // Different speed for typing and deleting
+
+    if (!isDeleting && charIndex <= currentWord.length) {
+        // Typing characters
+        textElement.textContent = currentWord.substring(0, charIndex);
         charIndex++;
-        setTimeout(typeEffect, 50); // Adjust typing speed here (milliseconds)
-    } else {
-        isFirstChar = true; // Reset isFirstChar for the next word
-        setTimeout(clearText, 500); // Adjust delay before clearing text here (milliseconds)
-    }
-}
-
-function clearText() {
-    if (charIndex >= 0) {
-        textElement.textContent = ''; // Clear the text
+        if (charIndex === currentWord.length) {
+            setTimeout(() => isDeleting = true, 1000); // Delay before deleting
+        }
+    } else if (isDeleting && charIndex >= 0) {
+        // Deleting characters
+        textElement.textContent = currentWord.substring(0, charIndex);
         charIndex--;
-        setTimeout(clearText, 50); // Adjust clearing speed here (milliseconds)
-    } else {
-        index = (index + 1) % words.length; // Move to the next word
-        setTimeout(typeEffect, 200); // Adjust delay before typing next word here (milliseconds)
+        if (charIndex < 0) {
+            isDeleting = false; // Reset to typing mode
+            index = (index + 1) % words.length; // Go to next word
+            charIndex = 0; // Reset character index
+        }
     }
+
+    setTimeout(typeEffect, delay); // Recursive call with adjusted delay
 }
 
+// Start the typing effect
 typeEffect();
