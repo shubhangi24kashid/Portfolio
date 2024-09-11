@@ -270,7 +270,7 @@ body {
 }
 
 /* Responsive layout - makes the navbar links stack on top of each other instead of side by side on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .navbar a:not(:first-child) {
         display: none;
     }
