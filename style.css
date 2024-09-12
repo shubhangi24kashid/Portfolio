@@ -357,7 +357,7 @@ body {
         font-weight: 500;
         line-height: 1.5;
         text-align:justify;
-        margin-left: 25px;
+        margin-left: 5px;
         padding-left: 25px;
     }
     
@@ -371,6 +371,7 @@ body {
     }
     .box{
         margin-bottom: 5px;
+    
     }
     
     .wrapper {
