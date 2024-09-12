@@ -8,7 +8,10 @@ body {
 .content {
     padding-top: 60px;
 }
-
+.lobo{
+    background-image: url('Add\ a\ heading.png');
+    height: 10px;;
+}
 .box {
     font-weight: 700;
     font-size: 70px;
@@ -34,7 +37,7 @@ body {
     flex-direction: row;
     font-size: 27px;
     font-weight: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .wrapper {
@@ -302,11 +305,24 @@ body {
     background-color: rgb(178, 171, 206);
     color: black;
 }
-
 .navbar .icon {
     display: none; /* Hidden by default */
     cursor: pointer;
     font-size: 28px;
+}
+.logo-container {
+    position: sticky; /* Make the logo container sticky */
+    top: 50px; /* Position it below the fixed navbar */
+    background-color: white; /* Background color for logo area */
+    padding: 10px; /* Padding around the logo */
+    text-align: left; /* Center-align the logo */
+    z-index: 900; /* Ensure it stays below the navbar */
+}
+
+.logo-container img {
+    height: 100px; /* Adjust logo height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Responsive width */
 }
 
 /* Responsive layout */
